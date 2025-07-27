@@ -144,8 +144,21 @@
     flex-direction: row;
     flex-wrap: nowrap;
     margin-left: 0;
+    margin-top: -50px;
     div {
       margin: 1rem;
+    }
+    div:nth-child(1) {
+      width: 70px;
+      height: 70px;
+    }
+    div:nth-child(2) {
+      width: 130px;
+      height: 120px;
+    }
+    div:nth-child(3) {
+      width: 70px;
+      height: 70px;
     }
   }
 }

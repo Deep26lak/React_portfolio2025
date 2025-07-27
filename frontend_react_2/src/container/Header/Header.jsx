@@ -2,6 +2,9 @@ import React from "react";
 import { AppWrap } from "../../wrapper";
 import { motion } from "framer-motion";
 import { Images } from "../../constants";
+import { FaDownload } from "react-icons/fa6";
+import resume from "../../assets/FrontendCV.pdf";
+
 import "./header.scss";
 
 const scaleVarients = {
@@ -36,6 +39,15 @@ const Header = () => {
             <p className="p-text">Frontend Developer</p>
             <p className="p-text">Web Developer</p>
             <p className="p-text">react js Developer</p>
+          </div>
+          <div className="btn-cmp app_flex">
+            <a
+              href={resume}
+              download="Deepak-Lak-Resume.pdf"
+              className="cv-btn "
+            >
+              <FaDownload /> Resume
+            </a>
           </div>
         </div>
       </motion.div>
